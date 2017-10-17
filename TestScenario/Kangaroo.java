@@ -76,7 +76,8 @@ public class Kangaroo extends Actor
     }
     
     private boolean findGround(){
-        return getY() >= worldHeight - height/2;
+
+        return getY() >= worldHeight - height/2 && deltaY > 0;
     }
     
     
@@ -91,9 +92,9 @@ public class Kangaroo extends Actor
     private void jump(){
         if(ground){
             ground = false;
-            deltaY = -2;
+            deltaY = -5;
             deltaX = pointingRight?1:-1;
-            setLocation(getX(), getY() - height/2+1);
+            //setLocation(getX(), getY() - height/2+1);
         }
     }
     
