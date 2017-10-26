@@ -39,7 +39,7 @@ public class TrainStations {
         OutputWriter writer = new OutputWriter(System.out);
         int[][] input = new TrainStations(reader, writer).input();
         //add your code here to turn the input into a graph of stations
-        
+        int x = 0;
         
         
         
