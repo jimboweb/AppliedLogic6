@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Kangaroo()
+comment0.text=\n\ Act\ -\ do\ whatever\ the\ Kangaroo\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=w
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ move()
+comment4.params=
+comment4.target=void\ keyAction()
+comment5.params=
+comment5.target=void\ land()
+comment6.params=
+comment6.target=boolean\ findGround()
+comment7.params=xFloat\ yFloat
+comment7.target=void\ drift(double,\ double)
+comment8.params=
+comment8.target=void\ jump()
+comment9.params=
+comment9.target=void\ fall()
+numComments=10
