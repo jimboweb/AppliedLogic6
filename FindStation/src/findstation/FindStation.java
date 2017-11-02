@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package trainstations;
+package findstation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,17 +10,13 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.StringTokenizer;
 
-/**
- *
- * @author jim.stewart
- */
-public class TrainStations {
+public class FindStation {
 
     private final InputReader reader;
     private final OutputWriter writer;
     private ArrayList<Station> stations;
 
-    public TrainStations(InputReader reader, OutputWriter writer) {
+    public FindStation(InputReader reader, OutputWriter writer) {
         this.reader = reader;
         this.writer = writer;
         this.stations = new ArrayList<>();
@@ -37,7 +28,7 @@ public class TrainStations {
     public static void main(String[] args) {
         InputReader reader = new InputReader(System.in);
         OutputWriter writer = new OutputWriter(System.out);
-        int[][] input = new TrainStations(reader, writer).input();
+        int[][] input = new FindStation(reader, writer).input();
         //add your code here to turn the input into a graph of stations
         int x = 0;
         
@@ -138,5 +129,4 @@ public class TrainStations {
             writer.print(String.format(Locale.ENGLISH, format, args));
         }
     }
-
 }
