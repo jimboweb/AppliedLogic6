@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 #Greenfoot project file
 class.Kangaroo.image=kangaroo.png
 class.Kangaroo.superclass=greenfoot.Actor
+=======
+#Greenfoot properties
+#Thu Oct 26 10:29:34 EDT 2017
+readme.name=@README
+simulation.speed=61
+target2.name=MyWorld
+dependency1.from=MyWorld
+target2.showInterface=false
+class.snake.image=snake2.png
+target1.type=ClassTarget
+>>>>>>> master
 class.MyWorld.superclass=greenfoot.World
 class.caamoflage.image=grass.png
 class.caamoflage.superclass=greenfoot.Actor
@@ -37,7 +49,17 @@ target1.height=50
 target1.name=Kangaroo
 target1.naviview.expanded=true
 target1.showInterface=false
+<<<<<<< HEAD
 target1.type=ClassTarget
+=======
+target1.name=Kangaroo
+editor.fx.0.width=800
+class.MyWorld.image=sand2.jpg
+target2.typeParameters=
+readme.y=10
+readme.x=10
+mainWindow.width=850
+>>>>>>> master
 target1.typeParameters=
 target1.width=80
 target1.x=0
@@ -60,3 +82,13 @@ target3.x=0
 target3.y=0
 version=2.8.0
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
+=======
+dependency1.type=UsesDependency
+version=2.7.1
+class.Kangaroo.superclass=greenfoot.Actor
+package.numDependencies=1
+project.charset=UTF-8
+class.snake.superclass=greenfoot.Actor
+readme.height=58
+>>>>>>> master
