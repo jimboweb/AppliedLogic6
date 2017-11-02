@@ -1,13 +1,11 @@
 #BlueJ class context
-comment0.target=TrainStation
-comment0.text=\n\ Write\ a\ description\ of\ class\ TrainStation\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.params=
+comment0.target=TrainStation()
 comment1.params=
-comment1.target=TrainStation()
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ TrainStation\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ do\ whatever\ the\ TrainStation\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.target=void\ setTargetStation()
 comment3.params=
-comment3.target=void\ setTargetStation()
-comment4.params=
-comment4.target=boolean\ getTargetStation()
-numComments=5
+comment3.target=boolean\ getTargetStation()
+numComments=4

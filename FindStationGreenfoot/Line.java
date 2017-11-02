@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and station1Info)
-
+import java.awt.Color;
 /**
  * Write a description of class Line here.
  * 
