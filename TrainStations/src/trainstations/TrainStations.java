@@ -37,12 +37,16 @@ public class TrainStations {
     public static void main(String[] args) {
         InputReader reader = new InputReader(System.in);
         OutputWriter writer = new OutputWriter(System.out);
-        TrainStations ts = new TrainStations(reader, writer);
-        ts.run();
+        new Thread(null, new Runnable(){
+            @Override
+            public void run(){
+                new TrainStations(reader, writer).run();
+            }
+        }, "1", 1<<26).start();
         writer.writer.flush();
     }
 
-    private void run(){
+    public void run(){
         int[][] input = new TrainStations(reader, writer).input();
         for(int i=0;i<input.length-1;i++){
             int[] line = input[i];
