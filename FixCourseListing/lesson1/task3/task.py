@@ -17,10 +17,13 @@ Classics 101 meets Friday in room 233 at 5:00 with Dr. Chang
 European History meets Friday in room 442 at 9:00 with Dr. Montez
 Classics 200 meets Friday in room 442 at 9:30 with Dr. Khanna"""
 
-course_listing_array = course_listing.split('\n')
+course_listing_array = course_listing.split("\n")
 
-lineNumber = 0
-for line in course_listing:
+newList = []
+
+for line in course_listing_array:
     if line.startswith("Classics"):
-        line.replace('9:30','12:30')
-        print(line)
+        line = line.replace('9:30','12:30')
+    newList.append(line)
+for line in newList:
+    print(line)
