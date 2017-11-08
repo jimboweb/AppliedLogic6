@@ -10,10 +10,13 @@ public class Train extends Actor
 {
     GreenfootImage myImage;
     World myworld;
+    ArrayList<Integer> availableStations;
+    int currentStation = -1;
+    int lastStation;
     public Train(){
         myImage = getImage();
         myImage.scale(myImage.getWidth()/3, myImage.getHeight()/3);
-
+        availableStations = new ArrayList<>();
     }
     public void addedToWorld(World w)
     {
@@ -25,12 +28,16 @@ public class Train extends Actor
      */
     public void act() 
     {
-        ArrayList<TrainStation> stations = (ArrayList<TrainStation>)myworld.getObjects(TrainStation.class);
+        checkStation();
     }   
     public void checkStation(){
         Actor s = getOneIntersectingObject(TrainStation.class);
         if(s!=null){
             TrainStation station = (TrainStation)s;
+            availableStations = station.getConnectedStations();
+            currentStation = station.getStationNumber();
+        } else {
+            lastStation = currentStation;
         }
     }
 }

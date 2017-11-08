@@ -19,11 +19,12 @@ public class Line extends Actor
      * Act - do whatever the LineOfSight wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public Line (Actor station1, Actor station2)
+    public Line (Actor station1, Actor station2, World w)
     {
         this.station1 = station1;
         this.station2 = station2;
         setImage(new GreenfootImage(1,1));
+        w.addObject(this,0,0);
     }
     public void act() 
     {
