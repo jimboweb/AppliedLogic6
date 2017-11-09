@@ -11,12 +11,14 @@ public class Train extends Actor
     GreenfootImage myImage;
     World myworld;
     ArrayList<Integer> availableStations;
+    ArrayList<TrainStation> allStations;
     int currentStation = -1;
     int lastStation;
-    public Train(){
+    public Train(ArrayList<TrainStation> allStations){
         myImage = getImage();
         myImage.scale(myImage.getWidth()/3, myImage.getHeight()/3);
         availableStations = new ArrayList<>();
+        this.allStations = allStations;
     }
     public void addedToWorld(World w)
     {
@@ -30,7 +32,7 @@ public class Train extends Actor
     {
         checkStation();
     }   
-    public void checkStation(){
+    private void checkStation(){
         Actor s = getOneIntersectingObject(TrainStation.class);
         if(s!=null){
             TrainStation station = (TrainStation)s;
@@ -39,5 +41,11 @@ public class Train extends Actor
         } else {
             lastStation = currentStation;
         }
+    }
+    private TrainStation getStations(int stationNumber){
+        if(allStations.size()<stationNumber){
+            return allStations.get(stationNumber);
+        }
+        throw new IndexOutOfBoundsException("Station " + stationNumber + " doesn't exist");
     }
 }

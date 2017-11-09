@@ -40,7 +40,7 @@ public class TrainWorld extends World
         stations.get(0).connectToStation(stations.get(1));
         stations.get(0).connectToStation(stations.get(2));
         stations.get(0).connectToStation(stations.get(3));
-        train = new Train();
+        train = new Train(stations);
         addObject(train,100,200);
         drawLines();
         
