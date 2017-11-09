@@ -38,6 +38,7 @@ public class Kangaroo extends Actor
         ground = findGround();
         move();
         keyAction();
+       
     }    
     
     private void move(){

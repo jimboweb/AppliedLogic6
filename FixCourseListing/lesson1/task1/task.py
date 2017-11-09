@@ -17,4 +17,4 @@ Classics 101 meets Friday in room 233 at 5:00 with Dr. Chang
 European History meets Friday in room 442 at 9:00 with Dr. Montez
 Classics 200 meets Friday in room 442 at 9:30 with Dr. Khanna"""
 
-course_listing_array = type here
+course_listing_array = course_listing.split('\n')

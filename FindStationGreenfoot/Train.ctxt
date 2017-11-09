@@ -1,11 +1,15 @@
 #BlueJ class context
 comment0.target=Train
 comment0.text=\n\ Write\ a\ description\ of\ class\ Train\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
-comment1.params=
-comment1.target=Train()
-comment2.params=
-comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ do\ whatever\ the\ Train\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment1.params=allStations
+comment1.target=Train(java.util.ArrayList)
+comment2.params=w
+comment2.target=void\ addedToWorld(greenfoot.World)
 comment3.params=
-comment3.target=void\ checkStation()
-numComments=4
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ Train\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment4.params=
+comment4.target=void\ checkStation()
+comment5.params=stationNumber
+comment5.target=TrainStation\ getStations(int)
+numComments=6
