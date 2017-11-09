@@ -13,6 +13,7 @@ public class Train extends Actor
     ArrayList<Integer> availableStations;
     ArrayList<TrainStation> allStations;
     int currentStation = -1;
+    int nextStation = -1;
     int lastStation;
     public Train(ArrayList<TrainStation> allStations){
         myImage = getImage();
@@ -31,16 +32,24 @@ public class Train extends Actor
     public void act() 
     {
         checkStation();
+        
     }   
-    private void checkStation(){
+    private boolean checkStation(){
         Actor s = getOneIntersectingObject(TrainStation.class);
         if(s!=null){
             TrainStation station = (TrainStation)s;
             availableStations = station.getConnectedStations();
             currentStation = station.getStationNumber();
+            setLocation(station.getX(), station.getY());
+            nextStation = -1;
+            return true;
         } else {
-            lastStation = currentStation;
+            if(currentStation!=-1){
+                lastStation=currentStation;
+                currentStation = -1;
+            }
         }
+        return false;
     }
     private TrainStation getStations(int stationNumber){
         if(allStations.size()<stationNumber){
