@@ -36,7 +36,6 @@ public class TrainStation extends Actor
     {
         // Add your action code here.
     }    
-    
     public void setTargetStation(){
         targetStation = true;
     }
