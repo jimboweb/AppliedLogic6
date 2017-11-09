@@ -72,6 +72,11 @@ public class TrainStations {
      * Station contains a station number and a list of integers for
      * connected stations. 
      */
+    private void addStation(int stationNumber){
+        if(stationNumber < stations.size()){
+            stations.add(new Station(stationNumber));
+        }
+    }
     class Station{
         private int stationNumber;
         private ArrayList<Integer> connectedStations;
