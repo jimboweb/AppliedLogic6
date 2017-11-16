@@ -30,6 +30,34 @@ public class TrainStations {
         this.writer = writer;
         this.stations = new ArrayList<>();
     }
+    
+    private ArrayList<Station> buildStationList(int[][] input){
+        //build station list here
+        ArrayList<Station> rtrn = new ArrayList<>(); //this is the list of stations that will be returned
+        //TODO:
+        //for each array inputItem in input
+            //newStationNumber is item 0 of inputItem
+            //int newConnectedStation = item 1 of inputItem
+            //Station currentStation = null;
+            //for station in rtrn
+            //    if station has newStationNumber
+            //        set currentStation to station 
+            //        boolean stationIsConnected is false
+            //        for connectedStation in currentStation connectedStations
+            //            if connectedStation equal to newConnectedStation
+            //                stationIsConnected is true
+            //        if stationIsConnected is false
+            //            add newConnectedStation to connectedStations of currentStation
+            //        break
+            //if currentStation is null
+            //    currentStation = new station with station number equal to stationNumber
+            //    add currentStation to rtrn
+            //    add newConnectedStation to connectedStations of currentStation
+            //    
+            //    now add this station to connectedStations of the other station
+        return rtrn;
+    }
+    
 
     /**
      * @param args the command line arguments
