@@ -12,9 +12,10 @@ public class Train extends Actor
     World myworld;
     ArrayList<Integer> availableStations;
     ArrayList<TrainStation> allStations;
-    int currentStation = -1;
-    int nextStation = -1;
-    int lastStation;
+    ArrayList<Integer> itinerary;
+    TrainStation currentStation = null;
+    TrainStation nextStation = null;
+    TrainStation lastStation;
     public Train(ArrayList<TrainStation> allStations){
         myImage = getImage();
         myImage.scale(myImage.getWidth()/3, myImage.getHeight()/3);
@@ -24,14 +25,29 @@ public class Train extends Actor
     public void addedToWorld(World w)
     {
         myworld = w;
+        
     }
+    private void goToStation(TrainStation targetStation){
+        // TODO:
+        // set nextStation to targetStation
+    }
+    
     /**
      * Act - do whatever the Train wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
+        
         checkStation();
+        // TODO:
+        // if currentStation not equal to nextStation
+        //     
+        //     int targetX is the x coordinate of targetStation
+        //     int targetY is the y coordinate of targetStation
+        //     turnTowards targetX and targetY
+        //     move 5
+        // run checkStation function
         
     }   
     private boolean checkStation(){
@@ -39,14 +55,14 @@ public class Train extends Actor
         if(s!=null){
             TrainStation station = (TrainStation)s;
             availableStations = station.getConnectedStations();
-            currentStation = station.getStationNumber();
+            currentStation = station;
             setLocation(station.getX(), station.getY());
-            nextStation = -1;
+            nextStation = null;
             return true;
         } else {
-            if(currentStation!=-1){
+            if(currentStation.equals(null)){
                 lastStation=currentStation;
-                currentStation = -1;
+                currentStation = null;
             }
         }
         return false;
