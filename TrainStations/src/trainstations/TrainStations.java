@@ -55,6 +55,10 @@ public class TrainStations {
             //    add newConnectedStation to connectedStations of currentStation
             //    
             //    now add this station to connectedStations of the other station
+        for(int[] pair:input){
+            int stationNumber = pair[0];
+            int connectedStations = pair[1];
+        }
         return rtrn;
     }
     
