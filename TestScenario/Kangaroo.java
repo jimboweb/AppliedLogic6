@@ -13,7 +13,7 @@ public class Kangaroo extends Actor
     double yDoub = 0;
     double deltaX = 0;
     double deltaY = 0;
-    double gravity = 0.1;
+    double gravity = 0.109;
     GreenfootImage myImage;
     int height;
     World myWorld;
@@ -92,7 +92,7 @@ public class Kangaroo extends Actor
     private void jump(){
         if(ground){
             ground = false;
-            deltaY = -2;
+            deltaY = -8.09;
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);
         }

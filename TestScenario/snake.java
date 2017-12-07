@@ -91,8 +91,8 @@ public class snake extends Actor
     private void jump(){
         if(ground){
             ground = false;
-            deltaY = -2;
-            deltaX = pointingRight?1:-1;
+            deltaY = -7;
+            deltaX = pointingRight?2:-2;
             setLocation(getX(), getY() - height/2+1);
         }
     }
