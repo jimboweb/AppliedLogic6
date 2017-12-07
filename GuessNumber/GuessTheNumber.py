@@ -22,13 +22,13 @@ while guessesTaken <15:
     if guess > number:
         print('As Jimmy McMillan would say, your guess IS TOO DAMN HIGH! Try again.')
 
-if guess == number:
-    break
+    if guess == number:
+        break
 
 if guess == number:
     guessesTaken = str(guessesTaken)
-    print (' You came, you saw, you conquered! ' +myNAME+ 'You guess my number in '+guessesTaken+'guesses! Congratualations and thanks for playing!')
+    print (' You came, you saw, you conquered, ' +myName+ '! You guessed my number in '+guessesTaken+' guesses! Congratualations and thanks for playing!')
 
 if guess != number:
     number = str(number)
-    print('Sorry. The die is cast. The number of which I was thinking was '+number', sorry.')
+    print('Sorry. The die is cast. The number of which I was thinking was '+number+', sorry.')
