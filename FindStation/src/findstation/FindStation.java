@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package trainstations;
+package findstation;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,17 +10,13 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.StringTokenizer;
 
-/**
- *
- * @author jim.stewart
- */
-public class TrainStations {
+public class FindStation {
 
     private final InputReader reader;
     private final OutputWriter writer;
     private ArrayList<Station> stations;
 
-    public TrainStations(InputReader reader, OutputWriter writer) {
+    public FindStation(InputReader reader, OutputWriter writer) {
         this.reader = reader;
         this.writer = writer;
         this.stations = new ArrayList<>();
@@ -37,50 +28,15 @@ public class TrainStations {
     public static void main(String[] args) {
         InputReader reader = new InputReader(System.in);
         OutputWriter writer = new OutputWriter(System.out);
-        new Thread(null, new Runnable(){
-            @Override
-            public void run(){
-                new TrainStations(reader, writer).run();
-            }
-        }, "1", 1<<26).start();
+        int[][] input = new FindStation(reader, writer).input();
+        //add your code here to turn the input into a graph of stations
+        int x = 0;
+        
+        
+        
         writer.writer.flush();
     }
 
-    public void run(){
-        int[][] input = new TrainStations(reader, writer).input();
-        for(int i=0;i<input.length-1;i++){
-            int[] line = input[i];
-            int stationNumber = line[0];
-            int connectedStationNumber = line[1];
-            
-            stations = fillAndAdd(stationNumber, stations);
-            Station station = stations.get(stationNumber);
-            stations = fillAndAdd(connectedStationNumber, stations);
-            Station connectedStation = stations.get(connectedStationNumber);
-            station.connectedStations.add(connectedStationNumber);
-            connectedStation.connectedStations.add(stationNumber);
-        }
-        int[] startEnd = input[input.length-1];
-        int start = startEnd[0];
-        int end = startEnd[1];
-        ArrayList<Integer> path = findPath(stations, start, end);
-        System.out.println(path);
-    }
-    
-    private ArrayList<Integer> findPath(ArrayList<Station> stations, int start, int end){
-        ArrayList<Integer> path = new ArrayList<>();
-        //TODO: write your code to find the shortest path
-        return path;
-    }
-    
-    private ArrayList<Station> fillAndAdd(int stationNumber, ArrayList<Station> stations){
-        if(stations.size()<=stationNumber){
-            for(int i=stations.size();i<=stationNumber;i++){
-                stations.add(new Station(i));
-            }
-        }
-        return stations;
-    }
     /**
      * <p>Input will begin with the number of stations on the
      * first line, followed by a line for each station containing a 
@@ -173,5 +129,4 @@ public class TrainStations {
             writer.print(String.format(Locale.ENGLISH, format, args));
         }
     }
-
 }

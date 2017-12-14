@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StudySettings">
+    <StudyTaskManager>
+      <option name="course">
+        <Course>
+          <option name="authors">
+            <list>
+              <StepicUser>
+                <option name="accessToken" value="" />
+                <option name="firstName" value="jim.stewart" />
+                <option name="guest" value="false" />
+                <option name="id" value="-1" />
+                <option name="lastName" value="" />
+                <option name="refreshToken" value="" />
+              </StepicUser>
+            </list>
+          </option>
+          <option name="courseMode" value="Course Creator" />
+          <option name="courseType" value="PyCharm" />
+          <option name="description" value="Your school has made a listing of courses that have a lot of mistakes. Your head of school was freaking out, but you told her to relax, because you would use your Python skills to find and fix the mistakes. " />
+          <option name="language" value="Python" />
+          <option name="lessons">
+            <list>
+              <Lesson>
+                <option name="id" value="0" />
+                <option name="index" value="1" />
+                <option name="name" value="lesson1" />
+                <option name="updateDate" />
+                <option name="taskList">
+                  <list>
+                    <PyCharmTask>
+                      <option name="index" value="1" />
+                      <option name="name" value="task1" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="0" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&#10;&#10;&lt;p&gt;An administrator at your school has created &#10;a course listing, but realized too late they&#10;made all kinds of mistakes.&lt;/p&gt;&#10;&#10;&lt;p&gt;They have double booked several rooms&#10;and also several professors. They dread having to go&#10;through and change everything by hand.&lt;/p&gt;&#10;&#10;&lt;p&gt;But you told them with your excellent Python&#10;skills you can do it by writing a program.&lt;/p&gt;&#10;&#10;&lt;p&gt;The first thing you have to do is to break&#10;the course listing up into a list, where each&#10;item in the list is one line.&lt;/p&gt;&#10;&#10;&lt;p&gt;You can do this with the &#10;&lt;span style=&quot;font-family: monospace; color:green; font-weight: bold&quot;&gt; &#10;split() &lt;/span&gt;function. &lt;/p&gt;&#10;&#10;&lt;p&gt;The split function is a method of the string object. &#10;You write it like this:&lt;/p&gt;&#10;&#10;&lt;p&gt;&#10;    'my.name'.split('.')&#10;&lt;/p&gt;&#10;&#10;&lt;p&gt;This will result in the following list: &lt;/p&gt;&#10;&#10;&lt;p&gt; &#10;    ['my', 'name']&#10;&lt;/p&gt;&#10;&#10;&lt;p&gt;You can split lines up by the line break character, &#10;which is &#10;&lt;span style=&quot;font-family: monospace; color:blue; font-weight: bold&quot;&gt;'\n'&lt;/span&gt;&lt;/p&gt;&#10;&#10;" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="index" value="0" />
+                                      <option name="initialState" />
+                                      <option name="length" value="38" />
+                                      <option name="offset" value="1204" />
+                                      <option name="selected" value="false" />
+                                      <option name="subtaskInfos">
+                                        <map>
+                                          <entry key="0">
+                                            <value>
+                                              <AnswerPlaceholderSubtaskInfo>
+                                                <option name="answer" value="" />
+                                                <option name="hasFrame" value="true" />
+                                                <option name="hints">
+                                                  <list>
+                                                    <option value="course_listing.split(&quot;\n&quot;)" />
+                                                  </list>
+                                                </option>
+                                                <option name="needInsertText" value="false" />
+                                                <option name="placeholderText" value="type code to break text into list here" />
+                                                <option name="possibleAnswer" value="course_listing.split('\n')" />
+                                                <option name="selected" value="false" />
+                                                <option name="status" value="Unchecked" />
+                                              </AnswerPlaceholderSubtaskInfo>
+                                            </value>
+                                          </entry>
+                                        </map>
+                                      </option>
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </PyCharmTask>
+                    <PyCharmTask>
+                      <option name="index" value="2" />
+                      <option name="name" value="task2" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="0" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="&lt;p&gt;Now you need to make sure your array works.&lt;/p&gt;&#10;&#10;&lt;p&gt;You can do that by looping through the array&#10;using the command:&#10;    for [variable] in [list]:&#10;&lt;/p&gt;&#10;&#10;&lt;p&gt;In the above, &lt;span style=&quot;font-family: monospace; color:green; font-weight: bold&quot;&gt; [list]&lt;/span&gt;&#10;should be the list you want to loop through, in this case &#10;&lt;span style=&quot;font-family: monospace; color:green; font-weight: bold&quot;&gt; &#10;course_listing_array&lt;/span&gt;. &lt;span style=&quot;font-family: monospace; color:green; font-weight: bold&quot;&gt; &#10;[variable]&lt;/span&gt; should be&#10;the variable that will represent the current list item&#10;in the loop.&lt;/p&gt;&#10;&#10;&lt;p&gt;For example, if I have the list&#10;    myList = [&quot;Here's &quot;, &quot;a &quot;, &quot;list&quot;]&#10;and I write the command&#10;    for word in myList:&#10;        print(word)&#10;&lt;/p&gt;&#10;&#10;&lt;p&gt;The loop will run three times. The first time the variable&#10;&lt;span style=&quot;font-family: monospace; color:green; font-weight: bold&quot;&gt; &#10;word&lt;/span&gt; will be the string &quot;Heres &quot;, and that will print.&#10;The second time it will be &quot;a &quot; and that will print. The third&#10;time it will be &quot;list&quot; and that will print. So you will get:&lt;/p&gt;&#10;&#10;&lt;p style = &quot;font-family: monospace&quot;&gt;&#10;Here's &lt;br&gt;&#10;a &lt;br&gt;&#10;list&lt;/p&gt;" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list>
+                                    <AnswerPlaceholder>
+                                      <option name="index" value="0" />
+                                      <option name="initialState" />
+                                      <option name="length" value="76" />
+                                      <option name="offset" value="1251" />
+                                      <option name="selected" value="false" />
+                                      <option name="subtaskInfos">
+                                        <map>
+                                          <entry key="0">
+                                            <value>
+                                              <AnswerPlaceholderSubtaskInfo>
+                                                <option name="answer" value="" />
+                                                <option name="hasFrame" value="true" />
+                                                <option name="hints">
+                                                  <list>
+                                                    <option value="line in course_listing_array" />
+                                                  </list>
+                                                </option>
+                                                <option name="needInsertText" value="false" />
+                                                <option name="placeholderText" value="loop through the course_listing_array with each item given the variable line" />
+                                                <option name="possibleAnswer" value="type here" />
+                                                <option name="selected" value="false" />
+                                                <option name="status" value="Unchecked" />
+                                              </AnswerPlaceholderSubtaskInfo>
+                                            </value>
+                                          </entry>
+                                        </map>
+                                      </option>
+                                      <option name="useLength" value="false" />
+                                    </AnswerPlaceholder>
+                                  </list>
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </PyCharmTask>
+                    <PyCharmTask>
+                      <option name="index" value="3" />
+                      <option name="name" value="task3" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="0" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="TODO: have to figure out the simplest way to &#10;do this. Probably write each line to a new&#10;list like&#10;&#10;    newList = []&#10;    for line in course_listing_array:&#10;        if line.startswith(&quot;Classics&quot;):&#10;            course_listing_array[it] = line.replace('9:30','12:30')&#10;        newList.append(line)" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="true" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </PyCharmTask>
+                    <PyCharmTask>
+                      <option name="index" value="4" />
+                      <option name="name" value="task4" />
+                      <option name="status" value="Unchecked" />
+                      <option name="stepId" value="0" />
+                      <option name="taskTexts">
+                        <map>
+                          <entry key="task" value="Write task description here using markdown or html" />
+                        </map>
+                      </option>
+                      <option name="updateDate" />
+                      <option name="taskFiles">
+                        <map>
+                          <entry key="task.py">
+                            <value>
+                              <TaskFile>
+                                <option name="answerPlaceholders">
+                                  <list />
+                                </option>
+                                <option name="highlightErrors" value="false" />
+                                <option name="index" value="1" />
+                                <option name="trackChanges" value="true" />
+                                <option name="trackLengths" value="true" />
+                                <option name="userCreated" value="false" />
+                                <option name="name" value="task.py" />
+                                <option name="text" />
+                              </TaskFile>
+                            </value>
+                          </entry>
+                        </map>
+                      </option>
+                    </PyCharmTask>
+                  </list>
+                </option>
+              </Lesson>
+            </list>
+          </option>
+          <option name="name" value="FixCourseListing" />
+        </Course>
+      </option>
+      <option name="toolWindowMode" value="EDITING" />
+      <option name="turnEditingMode" value="false" />
+      <option name="VERSION" value="6" />
+    </StudyTaskManager>
+  </component>
+</project>
