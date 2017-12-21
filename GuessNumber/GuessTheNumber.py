@@ -7,7 +7,7 @@ print('Hola! Como te llamas?')
 myName = input('Me llamo es ')
 
 number = random.randint(32, 741)
-print('Well,'+myName+' I am thinking of a number between 32 and 741! You have 9 guesses.')
+print('Well,'+myName+' I am thinking of a number between 32 and 741! You have 15 guesses.')
 
 while guessesTaken <15:
     print('Take a guess, its okay if its wrong.')
