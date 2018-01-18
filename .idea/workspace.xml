@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="7b10ccb4-ea96-4ea8-9eca-ddb90f3e4e68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StringPractice.py" afterPath="$PROJECT_DIR$/StringPractice.py" />
+=======
+    <list default="true" id="c537a777-e8f0-449b-98ac-d96ae28ae9e0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessNumber/.idea/workspace.xml" afterPath="$PROJECT_DIR$/GuessNumber/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessNumber/GuessTheNumber.py" afterPath="$PROJECT_DIR$/GuessNumber/GuessTheNumber.py" />
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
     <list default="true" id="c537a777-e8f0-449b-98ac-d96ae28ae9e0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GuessNumber/.idea/workspace.xml" afterPath="$PROJECT_DIR$/GuessNumber/.idea/workspace.xml" />
@@ -25,6 +31,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="FileEditorManager">
@@ -55,10 +62,15 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="IdeDocumentHistory">
@@ -76,11 +88,16 @@
 =======
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="728" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
@@ -100,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       <pane id="ProjectPane">
@@ -122,11 +140,16 @@
       <pane id="Scratches" />
       <pane id="ProjectPane" />
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="RunDashboard">
@@ -169,10 +192,13 @@
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -184,6 +210,8 @@
 =======
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
     <frame x="0" y="23" width="1280" height="728" extended-state="6" />
     <editor active="false" />
     <layout>
@@ -191,6 +219,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
+=======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
@@ -201,7 +232,11 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
@@ -222,6 +257,7 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="editorHistoryManager">
@@ -250,6 +286,8 @@
       </provider>
     </entry>
   </component>
+=======
+>>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
 >>>>>>> dd6c18973d5ef157afe73911cc2143a8bb6acd83
 =======
