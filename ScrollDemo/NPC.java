@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Alligator here.
+ * Write a description of class NPC here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Alligator extends NPC
+public class NPC extends Actor
 {
     /**
-     * Act - do whatever the Alligator wants to do. This method is called whenever
+     * Act - do whatever the NPC wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
