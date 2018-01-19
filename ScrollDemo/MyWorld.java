@@ -24,7 +24,7 @@ public class MyWorld extends World
     public void moveWorld(int deltaX, int deltaY)
     {
 
-        List<Actor> allActors = getObjects(Actor.class);
+        List<NPC> allActors = getObjects(NPC.class);
         for(Actor a : allActors)
         {
             a.setLocation(a.getX()+deltaX, a.getY()+deltaY);    
