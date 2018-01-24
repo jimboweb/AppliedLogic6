@@ -50,7 +50,6 @@ public class Kangaroo extends Actor
             landOnPlatform(platformBelow);
             return;
         }
-        System.out.println(deltaY);
         ground = findGround();
         
         
@@ -106,7 +105,7 @@ public class Kangaroo extends Actor
             ground = false;
 
             deltaY = -5;
-s
+
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);
         }

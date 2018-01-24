@@ -47,5 +47,7 @@ public class MyWorld extends World
         addObject(wall2,368,68);
         Player player = new Player();
         addObject(player, getWidth()/2, getHeight()/2);
+        Alligator alligator2 = new Alligator();
+        addObject(alligator2,-100,-100);
     }
 }
