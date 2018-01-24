@@ -28,5 +28,7 @@ public class MyWorld extends World
     {
         Kangaroo kangaroo = new Kangaroo();
         addObject(kangaroo,293,287);
+        Platform platform = new Platform();
+        addObject(platform,508,290);
     }
 }

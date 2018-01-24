@@ -35,19 +35,24 @@ public class Kangaroo extends Actor
     }
     public void act() 
     {
-        ground = findGround();
         move();
         keyAction();
-       
     }    
     
     private void move(){
-        ground = findGround();
         if(ground){
-            land();
             return;
         } 
         drift(xDoub,yDoub);
+        Platform platformBelow = findPlatformBelow();
+        if(platformBelow != null){
+            ground = true;
+            landOnPlatform(platformBelow);
+            return;
+        }
+        System.out.println(deltaY);
+        ground = findGround();
+        
         
         fall();
     }
@@ -72,8 +77,15 @@ public class Kangaroo extends Actor
     
     private void land(){
         deltaX = 0;
-        deltaY = 0;
+        deltaY = 0;        
         setLocation(getX(), worldHeight-height/2);
+    }
+    
+    private void landOnPlatform(Platform platform){
+        deltaX = 0;
+        deltaY = 0;
+        int pTop = platform.getY()-platform.getImage().getHeight()/2;
+        setLocation(getX(), pTop-height/2);
     }
     
     private boolean findGround(){
@@ -92,7 +104,7 @@ public class Kangaroo extends Actor
     private void jump(){
         if(ground){
             ground = false;
-            deltaY = -2;
+            deltaY = -5;
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);
         }
@@ -102,5 +114,14 @@ public class Kangaroo extends Actor
         deltaY+=gravity;
     }
     
+    private Platform findPlatformBelow(){
+        for(int i=0;i<20;i++){
+            Actor p = getOneObjectAtOffset(0, i, Platform.class);
+            if(p!=null){
+                return (Platform)p;
+            }
+        }
+        return null;
+    }
 
 }
