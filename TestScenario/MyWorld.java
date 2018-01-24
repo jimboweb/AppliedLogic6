@@ -28,9 +28,14 @@ public class MyWorld extends World
     {
         Kangaroo kangaroo = new Kangaroo();
         addObject(kangaroo,293,287);
+<<<<<<< HEAD
         kangaroo.setLocation(292,479);
         kangaroo.setLocation(149,526);
         snake snake = new snake();
         addObject(snake,621,528);
+=======
+        Platform platform = new Platform();
+        addObject(platform,508,290);
+>>>>>>> FinishedScroll
     }
 }
