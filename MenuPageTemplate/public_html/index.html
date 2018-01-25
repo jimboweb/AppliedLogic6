@@ -28,6 +28,17 @@ and open the template in the editor.
                 padding: 20px 0;
             }
         </style>
+        <script>
+            var menuItems = document.querySelectorAll(".menuItem")
+            console.log("menuItems length = " + menuItems.length);
+            menuItems.forEach(function(item){
+                Console.log("id= " + item.id)
+                item.onclick = function(){
+                    item.style.background = "#ffffff";
+                }
+            });
+            
+        </script>
     </head>
     <body>
         <div id = "menu">
