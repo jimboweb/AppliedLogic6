@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MapReader
+comment0.text=\n\ Write\ a\ description\ of\ class\ MapReader\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=MapReader()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MapReader\n
+comment2.params=
+comment2.target=char[][]\ readFile()
+comment3.params=bufferedReader
+comment3.target=int\ readFirstLine(java.io.BufferedReader)
+numComments=4
