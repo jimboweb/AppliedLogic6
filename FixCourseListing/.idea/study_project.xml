@@ -196,7 +196,7 @@
         </Course>
       </option>
       <option name="toolWindowMode" value="EDITING" />
-      <option name="turnEditingMode" value="false" />
+      <option name="turnEditingMode" value="true" />
       <option name="VERSION" value="6" />
     </StudyTaskManager>
   </component>
