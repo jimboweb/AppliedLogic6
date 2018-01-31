@@ -24,6 +24,10 @@ public class Kangaroo extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    void landOnPlatform(Platform p){
+        //TODO: fill in code for landing on platform here 
+    }
+    
     public Kangaroo(){
         myImage = getImage();
         height = myImage.getWidth();
