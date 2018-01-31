@@ -28,17 +28,6 @@ and open the template in the editor.
                 padding: 20px 0;
             }
         </style>
-        <script>
-            var menuItems = document.querySelectorAll(".menuItem")
-            console.log("menuItems length = " + menuItems.length);
-            menuItems.forEach(function(item){
-                Console.log("id= " + item.id)
-                item.onclick = function(){
-                    item.style.background = "#ffffff";
-                }
-            });
-            
-        </script>
     </head>
     <body>
         <div id = "menu">
@@ -66,5 +55,22 @@ and open the template in the editor.
                 Praesent id tortor velit. Phasellus maximus lacinia tellus.
             </div>
         </div>-->
+        <script>
+            var menu = document.getElementById("menu");
+            console.log(menu);
+            var menuItems = menu.querySelectorAll("div.menuItem")
+            console.log("menuItems length = " + menuItems.length);
+            menuItems.forEach(function(item){
+                item.onmouseover = function(){
+                    item.style.background = "#ffffff";
+                    item.style.color = "#ff6666";
+                }
+                item.onmouseleave = function(){
+                    item.style.background = "#ff6666";
+                    item.style.color = "#ffffff";
+                }
+            });
+            
+        </script>
     </body>
 </html>
