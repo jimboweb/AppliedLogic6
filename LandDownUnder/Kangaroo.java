@@ -25,7 +25,12 @@ public class Kangaroo extends Actor
      */
     
     void landOnPlatform(Platform p){
-        //TODO: fill in code for landing on platform here 
+        deltaX=0;
+        deltaY=0;
+        ground = true;
+        int pY = p.getY();
+        int px = p.getX();
+        
     }
     
     public Kangaroo(){
@@ -41,9 +46,10 @@ public class Kangaroo extends Actor
     {
         move();
         keyAction();
-        if (checkForPlatform()!=null)
+        Platform p = checkForPlatform();
+        if (p!=null)
         {
-            System.out.println("found platform");
+            landOnPlatform(p);
         }
       
     }    

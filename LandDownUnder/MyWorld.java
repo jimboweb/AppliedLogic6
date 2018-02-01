@@ -32,5 +32,15 @@ public class MyWorld extends World
         Platform platform = new Platform();
         addObject(platform,508,290);
 
+        Platform platform2 = new Platform();
+        addObject(platform2,395,256);
+        Platform platform3 = new Platform();
+        addObject(platform3,298,228);
+        Platform platform4 = new Platform();
+        addObject(platform4,203,267);
+        Platform platform5 = new Platform();
+        addObject(platform5,132,291);
+        Platform platform6 = new Platform();
+        addObject(platform6,60,336);
     }
 }
