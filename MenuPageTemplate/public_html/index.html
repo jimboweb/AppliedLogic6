@@ -103,13 +103,13 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-        <!--<div id = "menu">
+        <div id = "menu">
             <div id = "home" class = "menuItem">Home</div>
             <div id = "aboutUs" class = "menuItem">About Me</div>
             <div id = "contactMe" class = "menuItem">Contact Me</div>
             <div id = "ideas" class = "menuItem">Ideas</div>
-        </div>-->
-        <div id = "test">
+        </div>
+        <!--<div id = "test">
             <div id = "alertButton" class = "test">Don't click me!</div>
             <div id = "movingCircle" class = "test"></div>
             <div id = "bump0" class = "test"></div>
@@ -117,7 +117,7 @@ and open the template in the editor.
             <div id = "bump2" class = "test"></div>
             <div id = "bump3" class = "test"></div>
             <div id = "bump4" class = "test"></div>
-        </div>
+        </div>-->
         <!--<div id = "calc">
             <div id = "display" class = "calc">0</div>
             <button id = "zeroButton" class = "calc">0</button>
@@ -152,7 +152,7 @@ and open the template in the editor.
             </div>
         </div>-->
         <script>
-            var alertButton = document.getElementById("alertButton");
+            /*var alertButton = document.getElementById("alertButton");
             var alertTimesClicked = 0;
             var alertClick = function(){
                 alertTimesClicked++;
@@ -177,13 +177,30 @@ and open the template in the editor.
                     circleSpeedY *= -1;
                 }
             };
-            window.setInterval(moveCircle,1);
+            window.setInterval(moveCircle,1);*/
             /*var display = getElementById("display");
             var additionButton = getElementById("additionButton");
             var addition = function(){
                 display.textContent = 1;
             };
             additionButton.addEventListener("click", addition);*/
+
+            var menu = document.getElementById("menu");
+            console.log(menu);
+            var menuItems = menu.querySelectorAll("div.menuItem");
+            console.log("menuItems length = " + menuItems.length);
+            menuItems.forEach(function(item){
+                item.onmouseover = function(){
+                    item.style.background = "#ffffff";
+                    item.style.color = "#ff6666";
+                };
+                item.onmouseleave = function(){
+                    item.style.background = "#ff6666";
+                    item.style.color = "#ffffff";
+                };
+            });
+            
+
         </script>
     </body>
 </html>
