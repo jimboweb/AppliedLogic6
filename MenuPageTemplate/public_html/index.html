@@ -6,13 +6,16 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>My Website Home</title>
+        <title>Test</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type ="text/css">
-            #menu{
+            body {
+                background: lightgray
+            }
+            #menu {
                 position: relative; 
-                top: 0px; 
+                top: 30px; 
                 left: 0px; 
                 color: white; 
                 background: #ff6666; 
@@ -27,15 +30,108 @@ and open the template in the editor.
                 text-align: center;
                 padding: 20px 0;
             }
+            #test {
+                color: white;
+                font-family: monospace;
+                font-size: 24px;
+            }
+            .test {
+                position: absolute;
+                background: lightgray;
+                border: 2px outset white;
+                border-radius: 10px;
+                display: block;
+                text-align: center;
+            }
+            #movingCircle {
+                top: 0px;
+                left: 0px;
+                width: 12px;
+                height: 12px;
+            }
+            #alertButton {
+                top: 0px;
+                left: 0px;
+                width: 117px;
+                height: 112px;
+            }
+            #bump4 {
+                top: 38px;
+                left: 122px;
+                width: 36px;
+                height: 36px;
+                border: 2px outset;
+                border-radius: 4px;
+                z-index: 0;
+            }
+            #bump3 {
+                top: 42px;
+                left: 126px;
+                width: 28px;
+                height: 28px;
+                border: 2px outset;
+                border-radius: 4px;
+                z-index: 1;
+            }
+            #bump2 {
+                top: 46px;
+                left: 130px;
+                width: 20px;
+                height: 20px;
+                border: 2px outset;
+                border-radius: 4px;
+                z-index: 2;
+            }
+            #bump1 {
+                top: 50px;
+                left: 134px;
+                width: 12px;
+                height: 12px;
+                border: 2px outset;
+                border-radius: 4px;
+                z-index: 3;
+            }
+            #bump0 {
+                top: 54px;
+                left: 138px;
+                width: 4px;
+                height: 4px;
+                border: 2px outset;
+                border-radius: 4px;
+                z-index: 4;
+            }
         </style>
     </head>
     <body>
-        <div id = "menu">
-            <div id="home" class="menuItem">Home</div>
-            <div id="aboutUs" class="menuItem">About Me</div>
-            <div id="contactMe" class="menuItem">Contact Me</div>
-            <div id="ideas" class="menuItem">Ideas</div>
+        <!--<div id = "menu">
+            <div id = "home" class = "menuItem">Home</div>
+            <div id = "aboutUs" class = "menuItem">About Me</div>
+            <div id = "contactMe" class = "menuItem">Contact Me</div>
+            <div id = "ideas" class = "menuItem">Ideas</div>
+        </div>-->
+        <div id = "test">
+            <div id = "alertButton" class = "test">Don't click me!</div>
+            <div id = "movingCircle" class = "test"></div>
+            <div id = "bump0" class = "test"></div>
+            <div id = "bump1" class = "test"></div>
+            <div id = "bump2" class = "test"></div>
+            <div id = "bump3" class = "test"></div>
+            <div id = "bump4" class = "test"></div>
         </div>
+        <!--<div id = "calc">
+            <div id = "display" class = "calc">0</div>
+            <button id = "zeroButton" class = "calc">0</button>
+            <button id = "oneButton" class = "calc">1</button>
+            <button id = "twoButton" class = "calc">2</button>
+            <button id = "threeButton" class = "calc">3</button>
+            <button id = "fourButton" class = "calc">4</button>
+            <button id = "fiveButton" class = "calc">5</button>
+            <button id = "sixButton" class = "calc">6</button>
+            <button id = "sevenButton" class = "calc">7</button>
+            <button id = "eightButton" class = "calc">8</button>
+            <button id = "nineButton" class = "calc">9</button>
+            <button id = "additionButton" class = "calc">+</button>
+        </div>-->
         <!--<div id = "header">
             <div id="title">My Page</div>
             <div id="subtitle">Made By Me</div>
@@ -55,5 +151,39 @@ and open the template in the editor.
                 Praesent id tortor velit. Phasellus maximus lacinia tellus.
             </div>
         </div>-->
+        <script>
+            var alertButton = document.getElementById("alertButton");
+            var alertTimesClicked = 0;
+            var alertClick = function(){
+                alertTimesClicked++;
+                alert("you clicked me " + alertTimesClicked + " times you meanie :(");
+            };
+            alertButton.addEventListener("click", alertClick);
+            
+            var movingCircle = document.getElementById("movingCircle");
+            var circleLeft = 0;
+            var circleTop = 0;
+            var circleSpeedX = 1;
+            var circleSpeedY = 1;
+            var moveCircle = function(){
+                circleLeft += circleSpeedX;
+                circleTop += circleSpeedY;
+                movingCircle.style.left = circleLeft + "px";
+                movingCircle.style.top = circleTop + "px";
+                if(circleLeft === 0 | circleLeft === 105){
+                    circleSpeedX *= -1;
+                }
+                if(circleTop === 0 | circleTop === 100){
+                    circleSpeedY *= -1;
+                }
+            };
+            window.setInterval(moveCircle,1);
+            /*var display = getElementById("display");
+            var additionButton = getElementById("additionButton");
+            var addition = function(){
+                display.textContent = 1;
+            };
+            additionButton.addEventListener("click", addition);*/
+        </script>
     </body>
 </html>
