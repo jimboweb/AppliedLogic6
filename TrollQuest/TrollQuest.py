@@ -18,3 +18,28 @@ def chooseCave():
 
         return cave
 
+def checkCave(chosenCave):
+    print('You approach your chosen cave...')
+    time.sleep(3)
+    print('It is dark and dusty...')
+    time.sleep(3)
+    print('You come to a door and swing it open. You light the torches with your candle and...')
+    print()
+    time.sleep(3)
+
+    treasureCave=random.randint(1,3)
+
+    trollCave=random.randint(1,3)
+
+    if chosenCave==str(treasureCave):
+        print('''You see an ornate, sprawling and beautiful treasure horde! 
+        A third silver, a third gold and a third electrum, a gold-silver alloy.
+        Enough to fund that digital ice cream company you wanted to start!''')
+    elif  chosenCave==str(trollCave):
+        print('''The old troll jumps out and smashes you with his club.
+        Your soul gains solace in the fact he has a nice night eating human roast.''')
+    else:
+        print ('''You walk into your living room. You turn around to find that the desert has disappeared.
+        You sit down, thinking "Well that was a waste of money!" and watch Netflix. At least you
+        didn't get eaten!''')
+
