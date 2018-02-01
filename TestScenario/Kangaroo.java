@@ -46,7 +46,6 @@ public class Kangaroo extends Actor
         drift(xDoub,yDoub);
         Platform platformBelow = findPlatformBelow();
         if(platformBelow != null){
-            ground = true;
             landOnPlatform(platformBelow);
             return;
         }
@@ -81,6 +80,7 @@ public class Kangaroo extends Actor
     }
     
     private void landOnPlatform(Platform platform){
+        ground = true;
         deltaX = 0;
         deltaY = 0;
         int pTop = platform.getY()-platform.getImage().getHeight()/2;
@@ -105,6 +105,7 @@ public class Kangaroo extends Actor
             ground = false;
 
             deltaY = -5;
+
 
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);

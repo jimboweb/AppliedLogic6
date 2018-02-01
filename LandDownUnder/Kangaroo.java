@@ -24,6 +24,15 @@ public class Kangaroo extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    void landOnPlatform(Platform p){
+        deltaX=0;
+        deltaY=0;
+        ground = true;
+        int pY = p.getY();
+        int px = p.getX();
+        
+    }
+    
     public Kangaroo(){
         myImage = getImage();
         height = myImage.getWidth();
@@ -37,9 +46,10 @@ public class Kangaroo extends Actor
     {
         move();
         keyAction();
-        if (checkForPlatform()!=null)
+        Platform p = checkForPlatform();
+        if (p!=null)
         {
-            System.out.println("found platform");
+            landOnPlatform(p);
         }
       
     }    
