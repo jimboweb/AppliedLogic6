@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Kangaroo extends Actor
+public class snake extends Actor
 {
     boolean ground = false;
     double xDoub = 0;
@@ -20,11 +20,11 @@ public class Kangaroo extends Actor
     int worldHeight;
     boolean pointingRight = true;
         /**
-     * Act - do whatever the Kangaroo wants to do. This method is called whenever
+     * Act - do whatever the snake wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public Kangaroo(){
+    public snake(){
         myImage = getImage();
         height = myImage.getWidth();
     }
@@ -35,37 +35,33 @@ public class Kangaroo extends Actor
     }
     public void act() 
     {
+        ground = findGround();
         move();
         keyAction();
     }    
     
     private void move(){
+        ground = findGround();
         if(ground){
+            land();
             return;
         } 
         drift(xDoub,yDoub);
-        Platform platformBelow = findPlatformBelow();
-        if(platformBelow != null){
-            landOnPlatform(platformBelow);
-            return;
-        }
-        ground = findGround();
-        
         
         fall();
     }
     
     private void keyAction(){
-        if(Greenfoot.isKeyDown("up")){
+        if(Greenfoot.isKeyDown("W")){
             jump();
         }
-        if(Greenfoot.isKeyDown("right")){
+        if(Greenfoot.isKeyDown("D")){
             if(!pointingRight){
                 myImage.mirrorHorizontally();
             }
             pointingRight = true;
         }
-        if(Greenfoot.isKeyDown("left")){
+        if(Greenfoot.isKeyDown("A")){
             if(pointingRight){
                 myImage.mirrorHorizontally();
             }
@@ -75,16 +71,8 @@ public class Kangaroo extends Actor
     
     private void land(){
         deltaX = 0;
-        deltaY = 0;        
-        setLocation(getX(), worldHeight-height/2);
-    }
-    
-    private void landOnPlatform(Platform platform){
-        ground = true;
-        deltaX = 0;
         deltaY = 0;
-        int pTop = platform.getY()-platform.getImage().getHeight()/2;
-        setLocation(getX(), pTop-height/2);
+        setLocation(getX(), worldHeight-height/2);
     }
     
     private boolean findGround(){
@@ -103,11 +91,8 @@ public class Kangaroo extends Actor
     private void jump(){
         if(ground){
             ground = false;
-
-            deltaY = -5;
-
-
-            deltaX = pointingRight?1:-1;
+            deltaY = -7;
+            deltaX = pointingRight?2:-2;
             setLocation(getX(), getY() - height/2+1);
         }
     }
@@ -116,14 +101,5 @@ public class Kangaroo extends Actor
         deltaY+=gravity;
     }
     
-    private Platform findPlatformBelow(){
-        for(int i=0;i<20;i++){
-            Actor p = getOneObjectAtOffset(0, i, Platform.class);
-            if(p!=null){
-                return (Platform)p;
-            }
-        }
-        return null;
-    }
 
 }

@@ -24,6 +24,15 @@ public class Kangaroo extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
+    void landOnPlatform(Platform p){
+        deltaX=0;
+        deltaY=0;
+        ground = true;
+        int pY = p.getY();
+        int px = p.getX();
+        
+    }
+    
     public Kangaroo(){
         myImage = getImage();
         height = myImage.getWidth();
@@ -37,6 +46,12 @@ public class Kangaroo extends Actor
     {
         move();
         keyAction();
+        Platform p = checkForPlatform();
+        if (p!=null)
+        {
+            landOnPlatform(p);
+        }
+      
     }    
     
     private void move(){
@@ -44,11 +59,6 @@ public class Kangaroo extends Actor
             return;
         } 
         drift(xDoub,yDoub);
-        Platform platformBelow = findPlatformBelow();
-        if(platformBelow != null){
-            landOnPlatform(platformBelow);
-            return;
-        }
         ground = findGround();
         
         
@@ -79,13 +89,6 @@ public class Kangaroo extends Actor
         setLocation(getX(), worldHeight-height/2);
     }
     
-    private void landOnPlatform(Platform platform){
-        ground = true;
-        deltaX = 0;
-        deltaY = 0;
-        int pTop = platform.getY()-platform.getImage().getHeight()/2;
-        setLocation(getX(), pTop-height/2);
-    }
     
     private boolean findGround(){
         return getY() >= worldHeight - height/2;
@@ -106,7 +109,6 @@ public class Kangaroo extends Actor
 
             deltaY = -5;
 
-
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);
         }
@@ -116,14 +118,8 @@ public class Kangaroo extends Actor
         deltaY+=gravity;
     }
     
-    private Platform findPlatformBelow(){
-        for(int i=0;i<20;i++){
-            Actor p = getOneObjectAtOffset(0, i, Platform.class);
-            if(p!=null){
-                return (Platform)p;
-            }
-        }
-        return null;
+    Platform checkForPlatform(){
+        Platform p=(Platform)getOneObjectAtOffset(0, height/2+5, Platform.class);
+       return p;
     }
-
 }
