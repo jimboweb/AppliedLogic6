@@ -24,7 +24,6 @@ def checkCave(chosenCave):
     print('It is dark and dusty...')
     time.sleep(3)
     print('You come to a door and swing it open. You light the torches with your candle and...')
-    print()
     time.sleep(3)
 
     treasureCave=random.randint(1,3)
@@ -43,3 +42,11 @@ def checkCave(chosenCave):
         You sit down, thinking "Well that was a waste of money!" and watch Netflix. At least you
         didn't get eaten!''')
 
+playAgain='yes'
+while playAgain == 'yes' or playAgain == 'y':
+    displayIntro()
+    caveNumber = chooseCave()
+    checkCave (caveNumber)
+
+    print('Do you want to play again (yes or no)?')
+    playAgain = input()
