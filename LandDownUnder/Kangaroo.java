@@ -51,7 +51,7 @@ public class Kangaroo extends Actor
         {
             landOnPlatform(p);
         }
-      
+       removeTouching(caamoflage.class);
     }    
     
     private void move(){

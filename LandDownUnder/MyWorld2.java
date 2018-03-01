@@ -19,6 +19,12 @@ public class MyWorld2 extends World
         super(900, 600, 1); 
         prepare();
     }
+    public void act(){  
+        getObjects(caamoflage.class).size();
+        if( getObjects(caamoflage.class).isEmpty()){
+            Greenfoot.setWorld(new MyWorld3());   
+        }
+    }
 
     /**
      * Prepare the world for the start of the program.

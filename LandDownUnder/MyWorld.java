@@ -20,6 +20,13 @@ public class MyWorld extends World
         prepare();
     }
 
+    public void act(){  
+        getObjects(caamoflage.class).size();
+        if( getObjects(caamoflage.class).isEmpty()){
+            Greenfoot.setWorld(new MyWorld2());   
+        }
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
