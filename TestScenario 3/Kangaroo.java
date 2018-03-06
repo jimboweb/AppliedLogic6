@@ -24,15 +24,6 @@ public class Kangaroo extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    void landOnPlatform(Platform p){
-        deltaX=0;
-        deltaY=0;
-        ground = true;
-        int pY = p.getY();
-        int px = p.getX();
-        //GreenfootImage i=Platform.getImage();
-    }
-    
     public Kangaroo(){
         myImage = getImage();
         height = myImage.getWidth();
@@ -44,23 +35,19 @@ public class Kangaroo extends Actor
     }
     public void act() 
     {
+        ground = findGround();
         move();
         keyAction();
-        Platform p = checkForPlatform();
-        if (p!=null)
-        {
-            landOnPlatform(p);
-        }
-       removeTouching(caamoflage.class);
+       
     }    
     
     private void move(){
+        ground = findGround();
         if(ground){
+            land();
             return;
         } 
         drift(xDoub,yDoub);
-        ground = findGround();
-        
         
         fall();
     }
@@ -85,10 +72,9 @@ public class Kangaroo extends Actor
     
     private void land(){
         deltaX = 0;
-        deltaY = 0;        
+        deltaY = 0;
         setLocation(getX(), worldHeight-height/2);
     }
-    
     
     private boolean findGround(){
         return getY() >= worldHeight - height/2;
@@ -106,9 +92,7 @@ public class Kangaroo extends Actor
     private void jump(){
         if(ground){
             ground = false;
-
-            deltaY = -5;
-
+            deltaY = -2;
             deltaX = pointingRight?1:-1;
             setLocation(getX(), getY() - height/2+1);
         }
@@ -118,8 +102,5 @@ public class Kangaroo extends Actor
         deltaY+=gravity;
     }
     
-    Platform checkForPlatform(){
-        Platform p=(Platform)getOneObjectAtOffset(0, height/2+5, Platform.class);
-       return p;
-    }
+
 }
