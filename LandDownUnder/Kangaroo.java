@@ -30,7 +30,7 @@ public class Kangaroo extends Actor
         ground = true;
         int pY = p.getY();
         int px = p.getX();
-        
+        //GreenfootImage i=Platform.getImage();
     }
     
     public Kangaroo(){
@@ -51,7 +51,7 @@ public class Kangaroo extends Actor
         {
             landOnPlatform(p);
         }
-      
+       removeTouching(caamoflage.class);
     }    
     
     private void move(){
