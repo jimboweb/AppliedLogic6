@@ -28,13 +28,9 @@ editor.swing.0.height=721
 editor.swing.0.width=1281
 editor.swing.0.x=355
 editor.swing.0.y=23
-mainWindow.height=712
+mainWindow.height=728
 mainWindow.width=1169
-<<<<<<< HEAD
 mainWindow.x=47
-=======
-mainWindow.x=117
->>>>>>> 0f57dccad4fbcb13dafc63d94b3eed037ffad3b9
 mainWindow.y=23
 package.numDependencies=3
 package.numTargets=5
