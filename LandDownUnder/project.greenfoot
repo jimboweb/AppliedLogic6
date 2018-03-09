@@ -1,17 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
-<<<<<<< HEAD
->>>>>>>=1e22fd6b7ae1954d4667314e9f797801d1f886ba
-class.Kangaroo.image=kangaroo.png
-class.Kangaroo.superclass=greenfoot.Actor
-class.MyWorld.image=sand2.jpg
-class.MyWorld.superclass=greenfoot.World
-class.Platform.superclass=greenfoot.Actor
-class.caamoflage.image=grass.png
-class.caamoflage.superclass=greenfoot.Actor
-=======
->>>>>>>=cef3604be65a264b90390e383bba5db12112b7ee
+>>>>>>>=62208d93ea6150388d358c92afcb8b26434081c3
 class.Kangaroo.image=kangaroo.png
 class.Kangaroo.superclass=greenfoot.Actor
 class.Kangaroo2.image=frog.png
@@ -30,27 +20,11 @@ class.caamoflage.image=grass.png
 class.caamoflage.superclass=greenfoot.Actor
 class.caamoflage2.image=pizza_cheese.png
 class.caamoflage2.superclass=greenfoot.Actor
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
 class.snake.image=snake2.png
 class.snake.superclass=greenfoot.Actor
 dependency1.from=Kangaroo
 dependency1.to=Platform
 dependency1.type=UsesDependency
-<<<<<<< HEAD
-dependency2.from=MyWorld
-dependency2.to=Kangaroo
-dependency2.type=UsesDependency
-dependency3.from=MyWorld
-dependency3.to=Platform
-dependency3.type=UsesDependency
-dependency4.from=MyWorld
-dependency4.to=snake
-dependency4.type=UsesDependency
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-=======
 dependency10.from=MyWorld
 dependency10.to=snake
 dependency10.type=UsesDependency
@@ -102,30 +76,20 @@ dependency8.type=UsesDependency
 dependency9.from=MyWorld
 dependency9.to=Platform
 dependency9.type=UsesDependency
-editor.fx.0.height=692
-editor.fx.0.width=800
-editor.fx.0.x=240
-editor.fx.0.y=23
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 editor.swing.0.height=721
 editor.swing.0.width=1281
 editor.swing.0.x=355
 editor.swing.0.y=23
-<<<<<<< HEAD
-mainWindow.height=600
-mainWindow.width=850
-mainWindow.x=45
-mainWindow.y=40
-package.numDependencies=4
-package.numTargets=5
-=======
-mainWindow.height=692
-mainWindow.width=1280
+mainWindow.height=861
+mainWindow.width=1284
 mainWindow.x=72
 mainWindow.y=23
 package.numDependencies=18
 package.numTargets=11
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
 project.charset=UTF-8
 readme.height=58
 readme.name=@README
@@ -146,8 +110,6 @@ target1.typeParameters=
 target1.width=80
 target1.x=0
 target1.y=0
-<<<<<<< HEAD
-=======
 target10.height=50
 target10.name=MyWorld3
 target10.showInterface=false
@@ -164,7 +126,6 @@ target11.typeParameters=
 target11.width=90
 target11.x=170
 target11.y=70
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
 target2.height=50
 target2.name=caamoflage
 target2.showInterface=false
@@ -187,22 +148,11 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-<<<<<<< HEAD
-target4.name=snake
+target4.name=Kangaroo3
 target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
-target4.width=80
-target4.x=0
-target4.y=0
-target5.height=50
-target5.name=MyWorld
-=======
-target4.name=RemoveObjectOnCollision
-target4.showInterface=false
-target4.type=ClassTarget
-target4.typeParameters=
-target4.width=180
+target4.width=90
 target4.x=0
 target4.y=0
 target5.editor.height=692
@@ -210,24 +160,19 @@ target5.editor.width=900
 target5.editor.x=40
 target5.editor.y=23
 target5.height=50
-target5.name=snake
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
+target5.name=RemoveObjectOnCollision
 target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
-target5.width=80
+target5.width=180
 target5.x=0
 target5.y=0
-<<<<<<< HEAD
-version=3.0.0
-world.lastInstantiated=MyWorld
-=======
 target6.height=50
-target6.name=Kangaroo3
+target6.name=snake
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
-target6.width=90
+target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
@@ -255,5 +200,4 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
-world.lastInstantiated=MyWorld3
->>>>>>> 62208d93ea6150388d358c92afcb8b26434081c3
+world.lastInstantiated=MyWorld2
