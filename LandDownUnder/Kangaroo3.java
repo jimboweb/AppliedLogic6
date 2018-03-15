@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Kangaroo2 here.
+ * Write a description of class Kangaroo3 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Kangaroo2 extends Actor
+public class Kangaroo3 extends Actor
 {
     boolean ground = false;
     double xDoub = 0;
@@ -20,7 +20,7 @@ public class Kangaroo2 extends Actor
     int worldHeight;
     boolean pointingRight = true;
         /**
-     * Act - do whatever the Kangaroo2 wants to do. This method is called whenever
+     * Act - do whatever the Kangaroo3 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
@@ -30,11 +30,10 @@ public class Kangaroo2 extends Actor
         ground = true;
         int pY = p.getY();
         int px = p.getX();
-        removeTouching(caamoflage.class);
         //GreenfootImage i=Platform.getImage();
     }
     
-    public Kangaroo2(){
+    public Kangaroo3(){
         myImage = getImage();
         height = myImage.getWidth();
     }
@@ -52,7 +51,7 @@ public class Kangaroo2 extends Actor
         {
             landOnPlatform(p);
         }
-      
+      removeTouching(caamoflage2.class);
     }    
     
     private void move(){

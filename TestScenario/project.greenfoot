@@ -19,7 +19,11 @@ dependency2.from=MyWorld
 dependency2.to=snake
 =======
 dependency2.to=Kangaroo
+<<<<<<< HEAD
+>>>>>>> 66780f4b46e7cb3ac0973fd455c903c493612060
+=======
 >>>>>>> 649a4aade19580d00ed06d87811d5d6b0495316a
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Platform
@@ -36,7 +40,11 @@ editor.swing.0.width=1281
 editor.swing.0.x=355
 editor.swing.0.y=23
 <<<<<<< HEAD
+<<<<<<< HEAD
+mainWindow.height=728
+=======
 mainWindow.height=700
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 mainWindow.width=1169
 mainWindow.x=45
 mainWindow.y=23
@@ -49,7 +57,11 @@ mainWindow.x=45
 mainWindow.y=40
 package.numDependencies=4
 package.numTargets=5
+<<<<<<< HEAD
+>>>>>>> 66780f4b46e7cb3ac0973fd455c903c493612060
+=======
 >>>>>>> 649a4aade19580d00ed06d87811d5d6b0495316a
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 project.charset=UTF-8
 readme.height=58
 readme.name=@README
@@ -60,6 +72,12 @@ simulation.speed=61
 <<<<<<< HEAD
 target1.editor.height=700
 target1.editor.width=900
+target1.editor.x=0
+target1.editor.y=2
+=======
+<<<<<<< HEAD
+target1.editor.height=700
+target1.editor.width=900
 target1.editor.x=40
 =======
 target1.editor.height=698
@@ -67,6 +85,7 @@ target1.editor.width=900
 target1.editor.x=0
 >>>>>>> 649a4aade19580d00ed06d87811d5d6b0495316a
 target1.editor.y=23
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 target1.height=50
 target1.name=Kangaroo
 target1.naviview.expanded=true
@@ -90,16 +109,22 @@ target2.width=100
 target2.x=90
 target2.y=10
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=0
 target3.editor.y=2
+<<<<<<< HEAD
+=======
 =======
 target3.editor.height=698
 target3.editor.width=900
 target3.editor.x=0
 target3.editor.y=23
 >>>>>>> 649a4aade19580d00ed06d87811d5d6b0495316a
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 target3.height=50
 target3.name=Platform
 target3.naviview.expanded=true
@@ -129,5 +154,9 @@ target5.width=80
 target5.x=0
 target5.y=0
 version=3.0.0
+<<<<<<< HEAD
+>>>>>>> 66780f4b46e7cb3ac0973fd455c903c493612060
+=======
 >>>>>>> 649a4aade19580d00ed06d87811d5d6b0495316a
+>>>>>>> 507c98c0b1bdf9e545af6d03a097237196b9bc74
 world.lastInstantiated=MyWorld

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=RemoveObjectOnCollision
+comment0.text=\n\ <p>RemoveObjectOnCollision\ removes\ an\ object\ of\ a\ certain\ class,\ called\ the\n\ 'targetClass'\ when\ an\ actor,\ or\ the\ 'grabber'\ moves\ onto\ it.\ It\ also\ returns\ the\n\ number\ of\ objects\ being\ removed\ to\ the\ grabber.\ It\ calls\ for\ two\ arguments,\n\ the\ Actor\ that\ is\ doing\ the\ grabbing,\ and\ the\ Class\ of\ the\ thing\ to\ be\ \n\ grabbed.\ For\ example,\ an\ actor\ that\ wants\ to\ grab\ an\ actor\ of\ the\ class\n\ Star\ could\ create\ it\ using\ the\ method\:</p>\n\ \n\ <p\ style\ \=\ "font-weight\:bold">RemoveObjectOnCollision\ rooc\ \=\ new\ RemoveObjectOnCollision(this,\ Star.class);</p>\n\ \n\ <p>'rooc'\ can\ be\ anything.\ It\ is\ a\ variable\ name\ that\ represents\ the\ RemoveObjectOnCollision\ object.<p>\n\ \n\ <p>In\ the\ actor's\ act()\ method,\ you\ would\ include\ the\ code\:</p>\n\ \n\ <p\ style\ \=\ "font-weight\:bold">rooc.removeObjectOnCollision()</p>\n\ \n\ <p>This\ will\ remove\ the\ object,\ but\ not\ return\ anything.\ If\ you\ want\ to\ add\ one\ to\ a\ variable\ called\ 'score'\ every\ time\n\ you\ grab\ an\ object,\ you\ could\ instead\ write\:</p>\n\ \n\ <p\ style\ \=\ "font-weight\:bold">score\ +\=\ rooc.removeObjectOnCollision()</p>\n\ \n\ <p>This\ will\ remove\ the\ object\ and\ add\ to\ the\ score\ both.</p>\n\ \n\ @author\ Jim\ Stewart\ \n\ @version\ 1.0\n
+comment1.params=a\ t
+comment1.target=RemoveObjectOnCollision(greenfoot.Actor,\ java.lang.Class)
+comment2.params=
+comment2.target=int\ removeObjectOnCollision()
+numComments=3
