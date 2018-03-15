@@ -1,5 +1,5 @@
 import greenfoot.*;
-import java.awt.Color;
+
 /**
  * Write a description of class platfrom here.
  * 
