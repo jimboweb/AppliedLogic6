@@ -44,3 +44,15 @@ words = 'cow pigeon house kitchen hill army heaven antdisestablishmentarianism l
         'greenland or if is no not yes lawn elder geriatric man woman he she they are what how when were gourd squash' \
         'pike dock port bank doctor herbology theocracy botany zoology giraffe sebrz hippo rhino oracle delphi bye' .split()
 
+def getRandomWord(wordList)
+        wordIndex=random.randint(0, len(wordList) -1)
+        return wordList[wordIndex]
+
+def displayBoard(missedLetters, correctLetters, secretWord)
+    print(HANGMAN_PICS[len(missedLetters)])
+    print()
+
+print('Missed letters:', end=' ')
+for letter in missedLetters:
+    print(letter, end=' ')
+    print()
