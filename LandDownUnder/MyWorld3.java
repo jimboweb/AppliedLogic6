@@ -9,10 +9,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld3 extends World
 {
     int[][] platformLocations = {
-        {100,200},
-        {50,300},
-        {350,20},
-        {200,200}
+        {200,200},
+        {405,383},
+        {266,312},
+        {641,280},
+        {767,436},
+        {460,117},
+        {166,487},
+        {432,249},
+        {247,136},
+        {273,312},
+        {54,344},
+        {420,69},
+        {440,250},
+        {556,212},
+        {171,214},
     };
    
     
@@ -45,16 +56,12 @@ public class MyWorld3 extends World
         Kangaroo3 kangaroo3 = new Kangaroo3();
         addObject(kangaroo3,123,547);
         caamoflage2 caamoflage2 = new caamoflage2();
-        addObject(caamoflage2,698,534);
-    
-        
-   
-      
+        addObject(caamoflage2,768,398);
 
-     
-       
-
-      
-       
+        Trap trap = new Trap();
+        addObject(trap,270,292);
+        traps traps = new traps();
+        addObject(traps,277,307);
+        traps.setLocation(270,296);
     }
 }
