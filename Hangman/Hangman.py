@@ -82,3 +82,26 @@ def getGuess(alreadyGuessed):
             return guess
 
 
+def playAgain():
+    Print('Do you want to play again? (Y or N)')
+    return input().lower().startswith('Y')
+
+
+print('H A N G M A N')
+missedLetters = ''
+correctLetters = ''
+secretWord = getRandomWord(words)
+gameIsDone = False
+
+while True:
+    displayBoard(missedLetters, correctLetters, secretWord)
+
+    guess = getGuess(missedLetters+correctLetters)
+    if guess in secretWord:
+        correctLetters = correctLetters+guess
+
+        foundAllLetters = True
+        for i in range(len(secretWord)):
+            if secretWord[i] not in correctLetters:
+                foundAllLetters = False
+                
