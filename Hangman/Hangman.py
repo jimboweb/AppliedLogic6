@@ -83,7 +83,7 @@ def getGuess(alreadyGuessed):
 
 
 def playAgain():
-    Print('Do you want to play again? (Y or N)')
+    print('Do you want to play again? (Y or N)')
     return input().lower().startswith('Y')
 
 
@@ -104,4 +104,25 @@ while True:
         for i in range(len(secretWord)):
             if secretWord[i] not in correctLetters:
                 foundAllLetters = False
-                
+                break
+            if foundAllLetters:
+                print('You are correct! The secret word is "' + secretWord +'!" You have won!')
+                gameIsDone=True
+    else:
+        missedLetters = missedLetters + guess
+
+        if len(missedLetters) == len(HANGMAN_PICS) - 1:
+            displayBoard(missedLetters, correctLetters, secretWord)
+            print('You have run out of guesses! \nAfter' +
+                  str(len(missedLetters)) + ' missed guesses and ' +
+                  str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
+            gameIsDone = True
+
+    if gameIsDone:
+        if playAgain():
+            missedLetters=''
+            correctLetters=''
+            gameIsDone=False
+            secretWord=getRandomWord(words)
+        else:
+            break
