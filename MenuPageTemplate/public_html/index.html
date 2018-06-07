@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type ="text/css">
             body {
-                background: lightgray
+                background: white
             }
             #menu {
                 position: relative; 
@@ -100,15 +100,39 @@ and open the template in the editor.
                 border-radius: 4px;
                 z-index: 4;
             }
+            .events {
+                width: 100px;
+                height: 50px;
+                color: white;
+                font-family: sans-serif;
+                border: 10px solid white;
+                background: lightgray;
+                padding: 10px;
+            }
+            #draggable {
+                position: absolute;
+                left: 68px;
+                top: 308px;
+                height:6px;
+                width:6px;
+                border: 2px solid gray;
+                background: lightgray;
+            }
         </style>
     </head>
     <body>
-        <div id = "menu">
+        <!--<div id = "events">
+            <div id = "click" class = "events">Click</div>
+            <div id = "doubleClick" class = "events">Double click</div>
+            <div id = "mouseOver" class = "events">Mouse over</div>
+            <div id = "draggable" class = "events"></div>
+        </div>-->
+        <!--<div id = "menu">
             <div id = "home" class = "menuItem">Home</div>
             <div id = "aboutUs" class = "menuItem">About Me</div>
             <div id = "contactMe" class = "menuItem">Contact Me</div>
             <div id = "ideas" class = "menuItem">Ideas</div>
-        </div>
+        </div>-->
         <!--<div id = "test">
             <div id = "alertButton" class = "test">Don't click me!</div>
             <div id = "movingCircle" class = "test"></div>
@@ -178,14 +202,7 @@ and open the template in the editor.
                 }
             };
             window.setInterval(moveCircle,1);*/
-            /*var display = getElementById("display");
-            var additionButton = getElementById("additionButton");
-            var addition = function(){
-                display.textContent = 1;
-            };
-            additionButton.addEventListener("click", addition);*/
-
-            var menu = document.getElementById("menu");
+            /*var menu = document.getElementById("menu");
             console.log(menu);
             var menuItems = menu.querySelectorAll("div.menuItem");
             console.log("menuItems length = " + menuItems.length);
@@ -198,9 +215,38 @@ and open the template in the editor.
                     item.style.background = "#ff6666";
                     item.style.color = "#ffffff";
                 };
-            });
-            
-
+            });*/
+            /*var click = document.getElementById("click");
+            var clickEvent = function(){
+                click.style.background = "white";
+                click.style.color = "lightgray";
+                setTimeout(function(){
+                    click.style.background = "lightgray";
+                    click.style.color = "white";
+                }, 100);
+            };
+            click.addEventListener("click", clickEvent);
+            var doubleClick = document.getElementById("doubleClick");
+            var doubleClickEvent = function(){
+                doubleClick.style.background = "white";
+                doubleClick.style.color = "lightgray";
+                setTimeout(function(){
+                    doubleClick.style.background = "lightgray";
+                    doubleClick.style.color = "white";
+                }, 1000);
+            };
+            doubleClick.addEventListener("dblclick", doubleClickEvent);
+            var mouseOver = document.getElementById("mouseOver");
+            var mouseOverEvent = function(){
+                mouseOver.style.background = "white";
+                mouseOver.style.color = "lightgray";
+            };
+            var mouseOutEvent = function(){
+                mouseOver.style.background = "lightgray";
+                mouseOver.style.color = "white";
+            };
+            mouseOver.addEventListener("mouseover", mouseOverEvent);
+            mouseOver.addEventListener("mouseout", mouseOutEvent);*/
         </script>
     </body>
 </html>

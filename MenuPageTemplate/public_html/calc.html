@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+      _/    _/_/      _/      _/  _/  _/_/_/  _/_/_/  _/        _/_/_/    _/    _/     _/_/_/
+ _/  _/    _/      _/_/_/    _/_/_/    _/    _/_/_/  _/        _/      _/_/_/  _/     _/
+_/_/_/  _/_/        _/      _/  _/    _/    _/  _/  _/_/_/    _/_/_/  _/  _/  _/_/_/ _/_/_/
+-->
+<html>
+    <head>
+        <title>calc</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <fieldset>
+            <fieldset>
+                <div id = "display">0</div>
+            </fieldset>
+            <button id = "zero">0</button>
+            <button id = "one">1</button>
+            <button id = "two">2</button>
+            <button id = "three">3</button>
+            <button id = "four">4</button>
+            <button id = "five">5</button>
+            <button id = "six">6</button>
+            <button id = "seven">7</button>
+            <button id = "eight">8</button>
+            <button id = "nine">9</button>
+            <button id = "plus">+</button>
+            <button id = "minus">-</button>
+            <button id = "times">*</button>
+            <button id = "divide">/</button>
+            <button id = "equal">=</button>
+            <button id = "reset">reset</button>
+        </fieldset>
+        <script>
+            var display = document.getElementById("display");
+            var zeroButton = document.getElementById("zero");
+            var oneButton = document.getElementById("one");
+            var twoButton = document.getElementById("two");
+            var threeButton = document.getElementById("three");
+            var fourButton = document.getElementById("four");
+            var fiveButton = document.getElementById("five");
+            var sixButton = document.getElementById("six");
+            var sevenButton = document.getElementById("seven");
+            var eightButton = document.getElementById("eight");
+            var nineButton = document.getElementById("nine");
+            var plusButton = document.getElementById("plus");
+            var minusButton = document.getElementById("minus");
+            var timesButton = document.getElementById("times");
+            var divideButton = document.getElementById("divide");
+            var resetButton = document.getElementById("reset");
+            var operation = 0;
+            /*\ 
+            |*|0 is no operation
+            |*|1 is addition
+            |*|2 is subtraction
+            |*|3 is multiplication
+            |*|4 is divison
+            \*/
+            var memory = 0;
+            /*\
+            |*|memory is the number that the operation is being done on
+            \*/
+            var param = 0;
+            var addDigit = function(param){
+                memory *= 10;
+                memory += param;
+                display.textContent = memory;
+            };
+            var reset = function(){
+                memory = 0;
+                param = 0;
+                display.textContent = memory;
+            };
+            var doOperation = function(){
+                param = memory;
+                memory = 0;
+                
+            };
+            zeroButton.addEventListener("click", function(){addDigit(0);});
+            oneButton.addEventListener("click", function(){addDigit(1);});
+            twoButton.addEventListener("click", function(){addDigit(2);});
+            threeButton.addEventListener("click", function(){addDigit(3);});
+            fourButton.addEventListener("click", function(){addDigit(4);});
+            fiveButton.addEventListener("click", function(){addDigit(5);});
+            sixButton.addEventListener("click", function(){addDigit(6);});
+            sevenButton.addEventListener("click", function(){addDigit(7);});
+            eightButton.addEventListener("click", function(){addDigit(8);});
+            nineButton.addEventListener("click", function(){addDigit(9);});
+            resetButton.addEventListener("click", reset);
+            plusButton.addEventListener("click", function(){
+                operation = 1;
+                
+            });
+        </script>
+    </body>
+</html>
